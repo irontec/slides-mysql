@@ -1,0 +1,34 @@
+{
+  "title": "MySQL - curso avanzado",
+  "options": {
+    "controls": true,
+    "progress": true,
+    "history": true,
+    "center": true,
+    "slideNumber": true,
+    "touch": true,
+    "hideAddressBar": true,
+    "mouseWheel": true
+  },
+  "plugins": {
+    "search": true,
+    "zoom":   true,
+    "menu":   true,
+    "notes":  true,
+    "highlightjs": true,
+    "ga": false
+  },
+  "serviceWorker": true,
+  "slides": [
+    {"path": "index.md", "attrs": {"class":"intro"}},
+    ["replication/*.md"],
+    ["cluster/*.md"],
+    ["percona-cluster/*.md"],
+    ["cluster_control/*.md"],
+    ["proxysql/*.md"],
+    ["backups/*.md"],
+    ["docker/*.md"],
+    ["documentacion/*.md"],
+    "end.md"
+  ]
+}
