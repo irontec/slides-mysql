@@ -1,5 +1,7 @@
 {
   "title": "MySQL - curso avanzado",
+  "og_url": "https://irontec.github.io/slides-mysql/",
+  "og_image": "https://irontec.github.io/slides-mysql/media/logo-mysql.svg",
   "options": {
     "controls": true,
     "progress": true,
@@ -8,7 +10,10 @@
     "slideNumber": true,
     "touch": true,
     "hideAddressBar": true,
-    "mouseWheel": true
+    "mouseWheel": true,
+    "menu": {
+      "openButton": false
+    }
   },
   "plugins": {
     "search": true,

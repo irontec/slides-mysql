@@ -53,4 +53,14 @@ There is a npm script ready for publishing on github's pages:
 npm run deploy:gh
 ```
 
+### Generate PDF
 
+A PDF file can be generated using [dektape](https://github.com/astefanutti/decktape).
+
+Make sure dev server is up and listening on https://localhost:8080 (npm start)and just run from another console:
+
+```bash
+$ npm run create:pdf
+```
+
+**mysql_avanzado-slides.pdf** will be created (after a some time).
