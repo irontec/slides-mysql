@@ -61,7 +61,9 @@ module.exports = {
       minify: {
         collapseWhitespace: true
       },
-      title: baseConfig.title
+      title: baseConfig.title || '',
+      og_url: baseConfig.og_url || '',
+      og_image: baseConfig.og_image || ''
     }),
     ...(baseConfig.plugins.notes ?
       [
@@ -82,7 +84,6 @@ module.exports = {
       chunkFilename: "[id].css"
     }),
     new webpack.ProvidePlugin({
-      "window.Reveal": "reveal.js/",
       Reveal: "reveal.js"
     }),
     ...(baseConfig.serviceWorker?

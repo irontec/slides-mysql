@@ -24,9 +24,9 @@ function prepareSlide(slide) {
   } else {
     console.error("not a valid slide configuration found.");
   }
-  
+
   const isMd = slidePath.endsWith('.md');
-  
+
   const content = context(slidePath);
   if (isMd) {
       return `<section data-markdown${resolveAttrs(attrs)}><textarea data-template>${content}</textarea></section>`;

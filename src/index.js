@@ -24,7 +24,7 @@ slides.forEach(slide => {
     $slides.append(slide);
    }
 });
-
+window.Reveal = Reveal;
 Reveal.initialize({
   controls: true,
   progress: true,
@@ -39,7 +39,7 @@ Reveal.initialize({
 
 import 'reveal.js/plugin/markdown/marked.js'
 import { RevealMarkdown } from 'reveal.js/plugin/markdown/markdown';
-RevealMarkdown.initialize();
+RevealMarkdown.convertSlides();
 
 // #if plugins.highlightjs
 import 'highlight.js/styles/atom-one-dark.css'
@@ -48,7 +48,7 @@ import hljs from 'highlight.js/lib/highlight';
 Promise.all(
   // Auto-find languages (alias not supported)
   $("code").toArray()
-  .map(item => String($(item).attr("class") || "").replace("lang-","")).filter(Boolean)
+  .map(item => String($(item).attr("class") || "").replace("language-","")).filter(Boolean)
   .map(lang => ({lang, bundledResult: require('highlight.js/lib/languages/'+ lang + '.js')}))
   .map(({lang, bundledResult}) => {
     return new Promise((resolve) => {
