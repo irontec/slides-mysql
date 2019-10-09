@@ -40,8 +40,7 @@ Reveal.initialize({
 });
 
 import 'reveal.js/plugin/markdown/marked.js'
-import {RevealMarkdown} from 'reveal.js/plugin/markdown/markdown';
-RevealMarkdown.init();
+import 'reveal.js/plugin/markdown/markdown';
 
 // #if plugins.highlightjs
 import 'highlight.js/styles/atom-one-dark.css'
@@ -51,7 +50,7 @@ import hljs from 'highlight.js/lib/highlight';
 document.addEventListener('DOMContentLoaded', () => {
     Promise.all(
         // Auto-find languages (alias not supported)
-            $("code").toArray().reduce((acc, cur) => {
+        $("code").toArray().reduce((acc, cur) => {
             if (($(cur).attr("class") || '').match(/^language/)) {
                 const lang = $(cur).attr("class").replace('language-', '');
                 const bundledResult = require('highlight.js/lib/languages/' + lang + '.js')
@@ -64,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             return acc;
         }, [])
-    ).then(() => hljs.initHighlightingOnLoad());
+    ).then(() => hljs.initHighlighting());
 });
 // #endif
 
