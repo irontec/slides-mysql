@@ -1,5 +1,3 @@
-/* unused harmony export faCopyright */
-
 /*!
  * reveal.js
  * http://revealjs.com
@@ -31,12 +29,6 @@
  * https://js.foundation/
  *
  * Date: 2019-04-08
- */
-
-/**
- * marked - a markdown parser
- * Copyright (c) 2011-2018, Christopher Jeffrey. (MIT Licensed)
- * https://github.com/markedjs/marked
  */
 
 /*!
