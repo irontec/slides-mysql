@@ -62,7 +62,7 @@
     "@irontec/reveal.js-theme": "0.0.1",
     "glob": "^7.1.4",
     "highlight.js": "^9.15.10",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "reveal-ga": "github:jabiinfante/reveal-ga#fix/remove_deps",
     "reveal.js": "^3.8.0",
     "reveal.js-menu": "^1.2.0"
